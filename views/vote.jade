@@ -1,0 +1,19 @@
+!!! 5
+head
+    meta(id='viewport', name='viewport', content='initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    != css('vote')
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+    != js('vote')
+    
+body
+    div#container
+        h2 Socket.IO 
+        h3 Realtime web for everyone!
+        h4 Please Vote:
+        div#vote
+            div#yes Yes
+            div#no No
+        div#thanks 
+            h4 Thank you for voting!
+        h4#footer

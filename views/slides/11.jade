@@ -1,0 +1,20 @@
+section
+    h2 Sending a message to the server
+    div.codeHeading Client:
+    pre
+        code(contenteditable).
+            socket = io.connect('http://www.myserver.com')
+            
+            socket.emit('notification', {coolThings: ['node.js', 'coffeescript']})
+    
+    div.codeHeading Server:
+    pre
+        code(contenteditable).
+            io = require('socket.io').listen(80)
+            
+            io.sockets.on('connection', (socket) ->
+                
+                socket.on('notification', (msg) ->
+                    console.log(msg)
+                )
+            )

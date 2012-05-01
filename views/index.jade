@@ -1,0 +1,34 @@
+!!! 5
+head
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    != css('style')
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+    != js('client')
+body
+    div#reveal
+        div.slides 
+            include slides/01
+            include slides/02
+            include slides/03
+            include slides/04
+            include slides/05
+            include slides/06
+            include slides/07
+            include slides/08
+            include slides/09
+            include slides/10
+            include slides/11
+            include slides/vote
+            include slides/questions
+        
+        div.progress
+            span
+        
+        aside.controls
+            a.left(href='#') &#x25C4;
+            a.right(href='#') &#x25BA;
+            a.up(href='#') &#x25B2;
+            a.down(href='#') &#x25BC;
+        
+        
+    != js('vendor/reveal')

@@ -1,0 +1,25 @@
+section
+    h2 Pushing a message to a client
+    div.codeHeading Server:
+    pre
+        code(contenteditable).
+            io = require('socket.io').listen(80)
+            
+            io.sockets.on('connection', (socket) ->
+                
+                #send a private message
+                socket.emit('private message', {data: 'hello!'})
+                
+                #broadcast messages to all other sockets
+                socket.broadcast.emit('announcement', {pies: 'are awesome'})
+            )
+    
+    div.codeHeading Client:
+    pre
+        code(contenteditable).
+            socket = io.connect('http://www.myserver.com')
+            
+            socket.on('private message', (msg) ->
+                console.log(msg)
+            )
+            

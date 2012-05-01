@@ -1,0 +1,88 @@
+html, body {
+    font-family: 'Lato', Times, 'Times New Roman', serif;
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    
+    color: #eee;
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+html {
+    background: #1c1e20;
+    background: -moz-radial-gradient(center, ellipse cover, #555a5f 0%, #1c1e20 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#555a5f), color-stop(100%,#1c1e20));
+    background: -webkit-radial-gradient(center, ellipse cover, #555a5f 0%,#1c1e20 100%);
+    background: -o-radial-gradient(center, ellipse cover, #555a5f 0%,#1c1e20 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #555a5f 0%,#1c1e20 100%);
+    background: radial-gradient(center, ellipse cover, #555a5f 0%,#1c1e20 100%);
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+#container {
+    width: 540px;
+    margin: auto;
+}
+
+#yes, #no {
+    width: 150px;
+    margin: 0 60px;
+    padding: 20px 0;
+    float: left;
+    text-align: center;
+}
+
+#yes {
+    background-color: green;
+}
+
+#no {
+    background-color: red;
+}
+
+#thanks {
+    display: none
+}
+
+#footer {
+    clear: both;
+    padding: 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    
+    html, body {
+        font-size: 18px;
+    }
+    
+    #container {
+        width: 460px;
+    }
+    
+    #yes, #no {
+        width: 190px;
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-device-width: 320px) {
+    
+    html, body {
+        font-size: 20px;
+    }
+    
+    #container {
+        width: 300px;
+    }
+    
+    #yes, #no {
+        width: 110px;
+        margin: 0 20px;
+    }
+}

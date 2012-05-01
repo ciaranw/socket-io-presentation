@@ -1,0 +1,15 @@
+!!! 5
+head
+    meta(id='viewport', name='viewport', content='initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
+    != css('remote')
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+    != js('remote')
+    
+body
+    div#container
+        div#previous Prev
+        div#next Next
+        div#start Start timer
+        div#msg
+    
